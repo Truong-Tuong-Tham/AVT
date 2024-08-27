@@ -1,0 +1,120 @@
+.card {
+  box-sizing: border-box;
+  width: 300px;
+  max-width: 300px;
+  min-width: 200px;
+  height: 250px;
+  background-color: #1A3636;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+  border: 2px solid rgba(7, 7, 7, 0.12);
+  font-size: 16px;
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.icon {
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(90deg, #FFA823 0%, #FF4C4C 40%, rgba(0, 0, 0, 0.28) 60%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  background-position: 0px;
+  background-size: 200px;
+}
+
+.icon svg {
+  fill: white;
+  transition: all 0.3s ease;
+}
+
+.card:hover .icon {
+  background-position: -120px;
+  transform: scale(1.1);
+}
+
+.card:hover .icon svg {
+  fill: #FFA823;
+}
+
+.card:hover {
+  height: 270px;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin: 0 0 8px 0;
+}
+
+.description {
+  font-size: 1rem;
+  color: #E9FF97;
+  margin: 0;
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+  overflow: hidden; /* Hide the text initially */
+}
+
+.card:hover .description {
+  opacity: 1;
+  max-height: 40px; /* Adjust to fit your text */
+}
+.text-center {
+  text-align: center;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem; /* This is equivalent to 3xl */
+  line-height: 2.25rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+/* Additional styling for h2 */
+.custom-heading {
+  color: #4a4a4a; /* Dark gray color for the text */
+  text-transform: uppercase; /* Transform the text to uppercase */
+  letter-spacing: 0.1em; /* Add some spacing between the letters */
+  border-bottom: 2px solid #ff6600; /* Add an orange underline */
+  display: inline-block; /* Keep the underline width only as wide as the text */
+  padding-bottom: 0.5rem; /* Add some space between the text and the underline */
+}
+/* card.css */
+.carousel-custom .slick-slide {
+  padding: 0 10px;
+}
+
+
+
+.carousel-custom .slick-prev:hover,
+.carousel-custom .slick-next:hover {
+  color: #1890ff; /* Customize hover color */
+}
+
+.carousel-custom .slick-dots {
+  display: none !important;
+}

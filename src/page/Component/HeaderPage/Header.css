@@ -1,0 +1,210 @@
+/* Import custom font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.header {
+    background-color: #1a202c; /* bg-gray-900 */
+    color: #ffffff; /* text-white */
+    padding: 16px 32px; /* py-4 px-8 */
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    font-family: 'Roboto', sans-serif; /* Custom font */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 64px; /* w-16 */
+    height: 64px; /* h-16 */
+    object-fit: contain; /* object-contain */
+}
+
+.logo-text {
+    color: #ffffff; /* text-white */
+    font-size: 36px; /* text-3xl */
+    font-weight: 700; /* font-extrabold */
+    display: flex;
+    align-items: center;
+    margin-left: 12px; /* space-x-3 */
+    letter-spacing: -0.5px; /* Slightly tighter letter spacing */
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 32px; /* space-x-8 */
+}
+
+.nav-link {
+  color: #ffffff; /* text-white */
+  display: flex;
+  align-items: center;
+  gap: 8px; /* space-x-2 */
+  cursor: pointer;
+  font-size: 18px; /* Slightly larger font size */
+  font-weight: 500; /* Medium weight */
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #e2e8f0; /* hover:text-gray-300 */
+}
+
+.button {
+  padding: 8px 20px; /* px-5 py-2 */
+  border-radius: 8px; /* rounded-lg */
+  font-size: 16px; /* Adjust if needed */
+  font-weight: 500; /* Medium weight */
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.sign-in-button {
+  background-color: #2563eb; /* bg-blue-600 */
+  color: #ffffff; /* text-white */
+}
+
+.sign-in-button:hover {
+  background-color: #1d4ed8; /* hover:bg-blue-700 */
+}
+
+.join-button {
+  background-color: #10b981; /* bg-green-600 */
+  color: #ffffff; /* text-white */
+}
+
+.join-button:hover {
+  background-color: #059669; /* hover:bg-green-700 */
+}
+.btn {
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; /* Center text within button */
+  background: #40B3A2;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+  box-sizing: border-box;
+  padding: 10px 20px; /* Adjust padding as needed */
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: pointer;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.btn:hover {
+  opacity: .95;
+}
+
+.btn .animation {
+  border-radius: 100%;
+  animation: ripple 0.6s linear infinite;
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+  }
+  100% {
+    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0), 0 0 0 80px rgba(255, 255, 255, 0), 0 0 0 100px rgba(255, 255, 255, 0), 0 0 0 120px rgba(255, 255, 255, 0);
+  }
+}
+/* NavLink style */
+.custom-navlink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; /* Center text horizontally */
+  position: relative;
+  padding: 0.5em 1.5em; /* Adjust padding to fit text */
+  border: #1A5319 solid 0.15em;
+  border-radius: 0.25em;
+  color: #1A3636;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border 300ms, color 300ms;
+  text-decoration: none; /* Remove underline */
+  min-height: 2.5em; /* Ensure minimum height */
+}
+
+.custom-navlink:hover {
+  color: #1A3636;
+  
+}
+
+.custom-navlink:active {
+  border-color: teal;
+}
+
+.custom-navlink::after, .custom-navlink::before {
+  content: "";
+  position: absolute;
+  width: 9em;
+  aspect-ratio: 1;
+  background:#1A5319;
+  opacity: 40%;
+  border-radius: 50%;
+  transition: transform 500ms, background 300ms;
+}
+
+.custom-navlink::before {
+  left: 0;
+  transform: translateX(-8em);
+}
+
+.custom-navlink::after {
+  right: 0;
+  transform: translateX(8em);
+}
+
+.custom-navlink:hover::before {
+  transform: translateX(-1em);
+}
+
+.custom-navlink:hover::after {
+  transform: translateX(1em);
+}
+
+.custom-navlink:active::before,
+.custom-navlink:active::after {
+  background: teal;
+}
+
+/* Header.css */
+.custom-dropdown {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #333333;
+  font-weight: 600;
+  transition: color 0.4s ease-in-out;
+}
+
+
+
+.custom-dropdown .ant-dropdown-menu {
+  background-color: #2d2d2d;
+  border-radius: 8px;
+}
+
+.custom-dropdown .ant-dropdown-menu-item {
+  padding: 12px 20px;
+  color: #ffffff;
+  font-size: 1rem;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.custom-dropdown .ant-dropdown-menu-item:hover {
+  background-color: #333333;
+  color: #ffb100; /* Màu chữ khi hover */
+}

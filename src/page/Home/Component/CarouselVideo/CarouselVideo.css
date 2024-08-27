@@ -1,0 +1,105 @@
+
+  h1 {
+    font-size: 40px; /* Adjust font size as needed */
+    font-family: 'DomaineDisplay', Helvetica Neue, Helvetica, Arial, sans-serif; /* Font family */
+    color: gray; /* Text color */
+    font-weight: 200; /* Font weight */
+    line-height: 1.2; /* Line height for better readability */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .carousel-container {
+    position: relative;
+  }
+  
+  .carousel-container .ant-carousel .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .play-button img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .text-content {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-content h5 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .text-content h5 .testimonial-logo {
+    margin-left: 10px;
+  }
+  
+  .text-content blockquote {
+    font-size: 1rem;
+    color: #555;
+    border-left: 4px solid #4caf50;
+    padding-left: 20px;
+    margin: 0;
+    line-height: 1.5;
+    font-style: italic;
+  }
+  
+  .text-content blockquote::before {
+    content: open-quote;
+    font-size: 2rem;
+    color: #4caf50;
+    vertical-align: sub;
+    margin-right: 10px;
+  }
+  
+  .text-content blockquote::after {
+    content: close-quote;
+    font-size: 2rem;
+    color: #4caf50;
+    vertical-align: sub;
+    margin-left: 10px;
+  }
+  /* Style for carousel dot buttons */
+.ant-carousel .slick-dots {
+    bottom: 10px; /* Adjust the position from the bottom */
+  }
+  
+  .ant-carousel .slick-dots li {
+    margin: 0 5px; /* Spacing between dots */
+  }
+  
+  .ant-carousel .slick-dots li button {
+    width: 10px; /* Size of the dot */
+    height: 10px; /* Size of the dot */
+    border-radius: 50%; /* Makes the dot round */
+    background-color: #4caf50; /* Color of the dot */
+    opacity: 0.7; /* Dot transparency */
+  }
+  
+  .ant-carousel .slick-dots li.slick-active button {
+    background-color: #f0a500; /* Color of the active dot */
+    opacity: 1; /* Full opacity for the active dot */
+  }
+  

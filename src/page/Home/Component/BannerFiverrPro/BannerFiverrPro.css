@@ -1,0 +1,48 @@
+/* Custom CSS for Banner Styling */
+
+/* Heading 2 styles */
+.text-banner-title {
+    font-size: 2.5rem; /* Adjusted font size */
+    line-height: 1.2; /* Adjust line height */
+    font-family: 'Arial Black', sans-serif; /* Change font family */
+    color: #ffffff; /* Ensure text is white */
+    font-weight: bold; /* Bold text */
+  }
+  
+  /* Paragraph text styling */
+  .text-banner-description {
+    font-size: 1.25rem; /* Larger font size for readability */
+    line-height: 1.6; /* Increase line height */
+    font-family: 'Georgia', serif; /* Change font family */
+    color: #ffffff; /* Ensure text is white */
+  }
+  
+  /* Highlighted text styling */
+  .text-banner-highlight {
+    font-size: 1.5rem; /* Adjust font size */
+    font-family: 'Arial', sans-serif; /* Change font family */
+    color: #ffffff; /* Ensure text is white */
+  }
+  
+  /* Button styling */
+  a {
+    font-size: 1rem; /* Adjust font size */
+    padding: 0.75rem 1.5rem; /* Adjust padding */
+    border-radius: 0.5rem; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    display: inline-block;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .text-banner-title {
+      font-size: 2rem; /* Reduce font size on small screens */
+    }
+    .text-banner-description {
+      font-size: 1rem; /* Reduce font size on small screens */
+    }
+    .text-banner-highlight {
+      font-size: 1.25rem; /* Reduce font size on small screens */
+    }
+  }
+  
